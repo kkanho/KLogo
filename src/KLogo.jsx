@@ -6,8 +6,6 @@ export default function KLogo() {
   const [extraClass, setExtraClass] = useState('firstLoad')
   const [count, setCount] = useState(0);
 
-  console.log(extraClass)
-
   useEffect(() => {
     if (count > 0) {
       setExtraClass('no-load')
